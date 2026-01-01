@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+jwt:
+  secret: "change-me-to-a-long-random-secret-at-least-32-bytes"
+  issuer: "jwt-demo"
+  audience: "jwt-demo-client"
+  access-token-minutes: 5
+  refresh-token-days: 7
+
+cors:
+  allowed-origins:
+    - "http://localhost:3000"
+    - "http://localhost:5173"
+    - "http://localhost:8080"
